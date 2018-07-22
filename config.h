@@ -28,8 +28,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     mod version of IBM Model M keyboard
 
 /* matrix size */
-#define MATRIX_ROWS 12
-#define MATRIX_COLS 7
+#define MATRIX_ROWS 11
+#define MATRIX_COLS 8
 
 /* define if matrix has ghost */
 #define MATRIX_HAS_GHOST
@@ -38,7 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEBOUNCE    5
 
 /* legacy keymap support */
-#define USE_LEGACY_KEYMAP
+#define USE_LEGACY_KEYMAP 
 
 /* key combination for command */
 #define IS_COMMAND() ( \

@@ -61,12 +61,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  *  Original matrix here: http://geekhack.org/showthread.php?7767-Wireless-Model-M&p=133911&viewfull=1#post133911
  */
-#define KEYMAP(K00, K10, K20, K30, K40, K50, K60, K70, K80, K90, K87, K97, KA7, K0A, \
+#define KEYMAP(K00, K10, K20, K30, K40, K50, K60, K70, K80, K90, K87, K97, KA7, KA0, \
     K13, K01, K11, K21, K31, K41, K51, K61, K71, K81, K91, K95, KA5, KA1, \
     K12, K22, K32, K42, K52, K62, K72, K82, K92, K05, K15, K25, KA6, KA2, \
     K03, K33, K43, K53, K63, K73, K45, K55, K65, K75, K85, K06, K16, \
     K23, K04, K14, K24, K34, K44, K54, K74, K84, K76, K86, K96, K93, K83, \
-    K02, K35, K46, K57, K64, K77, K66, K49, KA3, KA4 \
+    K02, K35, K46, K57, K64, K77, K66, K94, KA3, KA4 \
     \
 ) { \
     { KC_##K00, KC_##K01, KC_##K02, KC_##K03, KC_##K04, KC_##K05, KC_##K06, KC_NO    }, \
@@ -88,7 +88,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Assign Fn key(0-7) to a layer to which switch with the Fn key pressed.
 static const uint8_t PROGMEM fn_layer[] = {
     0,              // Fn0
-    0,              // Fn1
+    1,              // Fn1
     0,              // Fn2
     0,              // Fn3
     0,              // Fn4
@@ -124,6 +124,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctrl |   |Alt  |           Fn4             |Alt  |   |Fn1  |
      * `-----'   `---------------------------------------'   `-----'
      */
+    /* ESC,   F1, F2, F3, F4, F5, F6, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU, EJCT, \*/
     KEYMAP(
             ESC,    F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11,  F12,     EJCT, \
             NUBS,   1,  2,  3,  4,  5,  6,  7,  8,   9,  0,  MINS, EQL,     BSPC, \
@@ -131,6 +132,22 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             CAPS,     A,  S,  D,  F,  G,  H,  J,  K,   L,  SCLN, QUOT,  BSLS,     \
             LSFT, GRV, Z,  X,  C,  V,  B,  N,  M,  COMM, DOT, SLSH,   UP,   RSFT, \
             FN1, LCTL, LALT, LGUI,       SPC,      RGUI,  RALT, LEFT, DOWN, RIGHT),
+
+    /*KEYMAP(
+            ESC,    F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11,  F12,     EJCT, \
+            NO,    NO, NO, NO, NO, NO, NO, NO, NO, NO, NO, NO, NO,      DELETE,   \
+            NO,     NO, NO, NO, NO, NO, NO, NO, NO, NO, NO, NO, NO,     RETURN,   \
+            NO,      NO, NO, NO, NO, NO, NO, NO, NO, NO, NO, NO, NO,              \
+            NO,     NO, NO, NO, NO, NO, NO, NO, NO, NO, NO, NO,  HOME,      NO,   \
+            FN2, NO, NO, NO,         SPC,          NO, NO, PGDN, END, PGUP       ),*/
+
+    KEYMAP(
+            ESC,    F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11,  F12,     EJCT, \
+            NUBS,   1,  2,  3,  4,  5,  6,  7,  8,   9,  0,  MINS, EQL,     BSPC, \
+            TAB,     Q,  W,  E,  R,  T,  Y,  U,  I,   O,  P,  LBRC, RBRC,  ENTER, \
+            CAPS,     A,  S,  D,  F,  G,  H,  J,  K,   L,  SCLN, QUOT,  BSLS,     \
+            LSFT, GRV, Z,  X,  C,  V,  B,  N,  M,  COMM, DOT, SLSH,   UP,   RSFT, \
+            FN1, LCTL, LALT, KP_DOT,       SPC,      RGUI,  RALT, LEFT, DOWN, RIGHT),
 
 };
 
