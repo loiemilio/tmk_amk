@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "debug.h"
 #include "util.h"
 #include "matrix.h"
-
+#include "led.h"
 
 /*
  * Happy Buckling Keyboard(IBM Model M mod)
@@ -60,7 +60,8 @@ void matrix_init(void)
     DDRD = 0x00;
     PORTD = 0xFF;
     // initialize led 
-    DDRE = 0x20;
+    DDRE = ~(0x20);
+    PORTE = 0x20;
 
     // initialize matrix state: all keys off
     for (uint8_t i=0; i < MATRIX_ROWS; i++) {

@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     AMK TMK based
 
 /* matrix size */
-#define MATRIX_ROWS 11
+#define MATRIX_ROWS 12
 #define MATRIX_COLS 8
 
 /* define if matrix has ghost */
