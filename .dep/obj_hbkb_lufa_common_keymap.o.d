@@ -5,8 +5,7 @@ obj_hbkb_lufa/common/keymap.o: ../../tmk_core/common/keymap.c config.h \
  ../../tmk_core/common/progmem.h ../../tmk_core/common/report.h \
  ../../tmk_core/common/action_layer.h ../../tmk_core/common/wait.h \
  ../../tmk_core/common/debug.h ../../tmk_core/common/print.h \
- ../../tmk_core/common/util.h ../../tmk_core/common/avr/xprintf.h \
- ../../tmk_core/common/bootloader.h
+ ../../tmk_core/common/util.h ../../tmk_core/common/bootloader.h
 
 config.h:
 
@@ -35,7 +34,5 @@ config.h:
 ../../tmk_core/common/print.h:
 
 ../../tmk_core/common/util.h:
-
-../../tmk_core/common/avr/xprintf.h:
 
 ../../tmk_core/common/bootloader.h:

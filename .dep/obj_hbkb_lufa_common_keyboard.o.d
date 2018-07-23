@@ -7,11 +7,10 @@ obj_hbkb_lufa/common/keyboard.o: ../../tmk_core/common/keyboard.c \
  ../../tmk_core/common/host_driver.h ../../tmk_core/common/led.h \
  ../../tmk_core/common/timer.h ../../tmk_core/common/avr/timer_avr.h \
  ../../tmk_core/common/print.h ../../tmk_core/common/util.h \
- ../../tmk_core/common/avr/xprintf.h ../../tmk_core/common/debug.h \
- ../../tmk_core/common/command.h ../../tmk_core/common/sendchar.h \
- ../../tmk_core/common/bootmagic.h ../../tmk_core/common/eeconfig.h \
- ../../tmk_core/common/backlight.h ../../tmk_core/common/hook.h \
- ../../tmk_core/common/mousekey.h
+ ../../tmk_core/common/debug.h ../../tmk_core/common/command.h \
+ ../../tmk_core/common/sendchar.h ../../tmk_core/common/bootmagic.h \
+ ../../tmk_core/common/eeconfig.h ../../tmk_core/common/backlight.h \
+ ../../tmk_core/common/hook.h
 
 config.h:
 
@@ -47,8 +46,6 @@ config.h:
 
 ../../tmk_core/common/util.h:
 
-../../tmk_core/common/avr/xprintf.h:
-
 ../../tmk_core/common/debug.h:
 
 ../../tmk_core/common/command.h:
@@ -62,5 +59,3 @@ config.h:
 ../../tmk_core/common/backlight.h:
 
 ../../tmk_core/common/hook.h:
-
-../../tmk_core/common/mousekey.h:

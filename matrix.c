@@ -29,6 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * Happy Buckling Keyboard(IBM Model M mod)
  *
  * Pin usage:
+ *   LED: PE6
  *   COL: PD0-7
  *   ROW: PB0-7, PF4-7
  */
@@ -58,6 +59,8 @@ void matrix_init(void)
     // initialize columns to input with pull-up(DDR:0, PORT:1)
     DDRD = 0x00;
     PORTD = 0xFF;
+    // initialize led 
+    DDRE = 0x20;
 
     // initialize matrix state: all keys off
     for (uint8_t i=0; i < MATRIX_ROWS; i++) {

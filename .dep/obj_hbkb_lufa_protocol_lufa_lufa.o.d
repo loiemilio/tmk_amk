@@ -7,10 +7,9 @@ obj_hbkb_lufa/protocol/lufa/lufa.o: ../../tmk_core/protocol/lufa/lufa.c \
  ../../tmk_core/common/action_macro.h ../../tmk_core/common/progmem.h \
  ../../tmk_core/common/led.h ../../tmk_core/common/sendchar.h \
  ../../tmk_core/common/debug.h ../../tmk_core/common/print.h \
- ../../tmk_core/common/util.h ../../tmk_core/common/avr/xprintf.h \
- ../../tmk_core/common/suspend.h ../../tmk_core/common/hook.h \
- ../../tmk_core/common/led.h ../../tmk_core/common/matrix.h \
- ../../tmk_core/protocol/lufa/descriptor.h \
+ ../../tmk_core/common/util.h ../../tmk_core/common/suspend.h \
+ ../../tmk_core/common/hook.h ../../tmk_core/common/led.h \
+ ../../tmk_core/common/matrix.h ../../tmk_core/protocol/lufa/descriptor.h \
  ../../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/USB.h \
  ../../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/../../Common/Common.h \
  ../../tmk_core/protocol/lufa/LUFA-git/LUFA/Drivers/USB/../../Common/Architectures.h \
@@ -139,8 +138,6 @@ config.h:
 ../../tmk_core/common/print.h:
 
 ../../tmk_core/common/util.h:
-
-../../tmk_core/common/avr/xprintf.h:
 
 ../../tmk_core/common/suspend.h:
 

@@ -5,7 +5,7 @@ obj_hbkb_lufa/common/action_layer.o: ../../tmk_core/common/action_layer.c \
  ../../tmk_core/common/util.h ../../tmk_core/common/action_layer.h \
  ../../tmk_core/common/hook.h ../../tmk_core/common/led.h \
  ../../tmk_core/common/nodebug.h ../../tmk_core/common/debug.h \
- ../../tmk_core/common/print.h ../../tmk_core/common/avr/xprintf.h
+ ../../tmk_core/common/print.h
 
 config.h:
 
@@ -34,5 +34,3 @@ config.h:
 ../../tmk_core/common/debug.h:
 
 ../../tmk_core/common/print.h:
-
-../../tmk_core/common/avr/xprintf.h:

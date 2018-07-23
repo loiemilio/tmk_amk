@@ -7,7 +7,7 @@ obj_hbkb_lufa/common/action_tapping.o: \
  ../../tmk_core/common/action_tapping.h ../../tmk_core/common/timer.h \
  ../../tmk_core/common/avr/timer_avr.h ../../tmk_core/common/nodebug.h \
  ../../tmk_core/common/debug.h ../../tmk_core/common/print.h \
- ../../tmk_core/common/util.h ../../tmk_core/common/avr/xprintf.h
+ ../../tmk_core/common/util.h
 
 config.h:
 
@@ -38,5 +38,3 @@ config.h:
 ../../tmk_core/common/print.h:
 
 ../../tmk_core/common/util.h:
-
-../../tmk_core/common/avr/xprintf.h:
