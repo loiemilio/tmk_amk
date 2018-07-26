@@ -1,0 +1,11 @@
+.dep/*
+*.elf
+*.hex
+*.lss
+*.lss
+*.map
+*.sym
+/obj_*
+.DS_Store
+*.sublime-workspace
+*.eep
